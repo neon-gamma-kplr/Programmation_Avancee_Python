@@ -28,9 +28,9 @@ class Moto(Vehicule):
         super().__init__(marque, modele, annee)
         self.nb_roues = nb_roues
     
-    def afficher_attributs(self):
-        super().afficher_attributs()
-        print("- Nombre de roues :", self.nb_roues)
+    # def afficher_attributs(self):
+    #     super().afficher_attributs()
+    #     print("- Nombre de roues :", self.nb_roues)
 
 # Création d'une instance de chaque classe
 voiture1 = Voiture("Renault", "Clio", 2018, 5)
