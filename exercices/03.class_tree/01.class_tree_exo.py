@@ -4,7 +4,7 @@ from unidecode import unidecode
 from treelib import Tree
 
 def json_dict_from_file():
-    local_path = os.path.dirname(os.path.abspath("/workspaces/Python-OOP-Project/exercices/03.class_tree/json_data.json"))
+    local_path = os.path.dirname(os.path.abspath("/workspaces/Programmation_Avancee_Python/exercices/03.class_tree/json_data.json"))
     json_data = json.load(open(os.path.join(local_path, 'json_data.json'), "rb"))
     json_str = json.dumps(json_data)
     json_data = (unidecode(json_str))
@@ -26,6 +26,7 @@ def main():
     json_dict = json_dict_from_file()
     create_tree_from_dict(my_tree, "racine", json_dict)
     my_tree.show()
+
 
 if __name__ == '__main__':
     main()
